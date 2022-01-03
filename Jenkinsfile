@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'echo "Fail!"; exit 1'
+                sh 'echo "Fail!"'
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
